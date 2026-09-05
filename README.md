@@ -191,7 +191,3 @@ Run the cells top to bottom — later cells depend on `mu`, `sigma`, and `MainTh
 - **Fixed exchange rate.** USD prices are converted at a hard-coded 1.70, which ignores when the listing was posted.
 - **No outlier handling.** Listings are taken as-is, including obvious data-entry errors in the mileage field.
 - **Polynomial R² is in-sample.** It is fitted and scored on the same 1,328 rows.
-
-## License
-
-No license specified.
