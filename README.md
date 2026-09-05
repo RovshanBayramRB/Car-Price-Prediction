@@ -181,13 +181,3 @@ Run the cells top to bottom — later cells depend on `mu`, `sigma`, and `MainTh
 ├── turboaz.csv                  # 1,328 scraped Mercedes listings
 └── README.md
 ```
-
----
-
-## Limitations
-
-- **Two features only.** Engine volume, transmission, body type, and city are all in the CSV and all unused. Price would be predicted much better with them.
-- **One brand.** Every row is a Mercedes, so nothing here generalizes to the wider market.
-- **Fixed exchange rate.** USD prices are converted at a hard-coded 1.70, which ignores when the listing was posted.
-- **No outlier handling.** Listings are taken as-is, including obvious data-entry errors in the mileage field.
-- **Polynomial R² is in-sample.** It is fitted and scored on the same 1,328 rows.
